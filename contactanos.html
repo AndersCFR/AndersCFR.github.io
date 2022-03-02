@@ -11,38 +11,37 @@
 </head>
 <body>
     <header class="header">
-        <img src="img/logo.PNG">
+        <img src="img/logo.PNG" alt="logo UEB">
         <nav class="navegation">
             <div class="topHeader">
                 <div>
                     <input type="text" placeholder="Buscar">
                 </div>
                 <div class="iconos">
-                    <a href="#"><img src="img/youtube.png" width="29px" height="27px"></a>                                
-                    <a href="#"><img src="img/instagram.png"></a>                                
-                    <a href="#"><img src="img/twitter.png"></a>                                
-                    <a href="#"><img src="img/facebook.png"></a>                                                     
-                </div>          
+                    <a href="#"><img src="img/youtube.png" alt="youtube" width="29px" height="27px"></a>                                
+                    <a href="#"><img src="img/instagram.png" alt="instagram"></a>                                
+                    <a href="#"><img src="img/twitter.png" alt="twitter"></a>                                
+                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>                                                     
+                </div>       
             </div>
             
-            <li class="navegationLinks">
-                <ul>
+            <ul class="navegationLinks">
+                <li>
                     <a class="linkNavegacion" href="index.html">Inicio</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a class="linkNavegacion" href="oferta.html">Oferta académica</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a class="linkNavegacion" href="#">Investigación</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a class="linkNavegacion" href="#">Servicios</a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                     <a class="linkNavegacion activate" href="contactanos.html">Contáctanos</a>
-                </ul>
-                
-            </li>
+                </li>                
+            </ul>
         </nav>
     </header>
 
@@ -57,7 +56,7 @@
                 <button class="boton">A +</button>
                 <button class="boton">A -</button>
             </div>     
-            <a href='javascript:;' onclick="informacion()"><img src="img/help2.png" width="37" height="37"></a>         
+            <a href='javascript:;' onclick="informacion()"><img src="img/help2.png" alt="icono ayuda" width="37" height="37"></a>         
         </div>
     </div>
 
@@ -68,23 +67,33 @@
     <!-- Contenido Contacto -->
     <div class="contenidoContacto">
         <a href="https://www.google.com.ec/maps/place/Universidad+Estatal+de+Bolívar/@-1.5710248,-79.0105681,16.61z/data=!4m5!3m4!1s0x91d316085da1f499:0x1ce14b998d6b7583!8m2!3d-1.5711162!4d-79.0072775?hl=es">
-            <img src="img/mapa.PNG" alt="imagenMapaUEB" width="80%">
+            <img src="img/mapa.PNG" alt="imagen mapa UEB" width="80%">
         </a>
         <form class="formulario" action="#" method="get">
             <div class="subform">
-                <p>Nombre *<br><input type="text" name="nombre" size="20"></p>
-                <p>Apellido *<br><input type="text" name="nombre" size="20"></p>
+                <p><label for="nombre">Nombre *</label><br>
+                    <input type="text" name="nombre" id="nombre" size="20">
+                </p>
+                <p><label for="apellido">Apellido *</label><br>
+                    <input type="text" name="apellido" id="apellido" size="20">
+                </p>
             </div>
             <div class="subform">
-                <p>Correo * <br><input type="text" name="nombre" size="20"></p>
-                <p>Teléfono * <br><input type="text" name="nombre" size="20"></p>
+                <p><label for="correo">Correo *</label><br>
+                    <input type="text" name="correo" id="correo" size="20">
+                </p>
+                <p><label for="telefono">Teléfono *</label><br>
+                    <input type="text" name="telefono" id="telefono" size="20">
+                </p>
             </div>
            <div class="subform">
-            <p>Mensaje * <br><textarea id="w3review" name="w3review" rows="4" cols="50">                
-                </textarea></p>
+            <p><label for="telefono">Mensaje *</label><br>
+                <textarea id="w3review" name="w3review" rows="4" cols="50">                
+                </textarea>
+            </p>
            </div>            
             <p class="botonEnviar">
-              <input class="boton" type="submit" value="Enviar" href='javascript:;' onclick="mensajeEnviado()">            
+              <input class="boton" type="submit" value="Enviar" onclick="mensajeEnviado()">            
             </p>
           </form>
     </div>
